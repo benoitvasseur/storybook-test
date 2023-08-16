@@ -1,5 +1,3 @@
-import SampleService from "../services/sample/SampleService";
-
 export default class TestTransformer {
   static readonly CONSTRUCTOR_NAME_SYMBOL_IDENTIFIER = '___CTOR_NAME___';
 
