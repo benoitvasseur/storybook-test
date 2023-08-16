@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { getGlobalInstance } from 'plume-ts-di';
+import React from 'react';
 import useMessages from '../../i18n/hooks/messagesHook';
+import TestTransformer from '../TestTransformer';
 import SampleService from '../../services/sample/SampleService';
-import useLoader from '../../lib/plume-http-react-hook-loader/promiseLoaderHook';
-import { Sample } from '../../api/session/SampleApi';
 
 export default function Home() {
+  console.log('TestTransformer', TestTransformer.getTypeName(SampleService));
   const { messages } = useMessages();
 
   return <div id="home-layout">
